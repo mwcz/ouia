@@ -39,7 +39,7 @@ Namespacing
   **MUST** be prefixed with `ouia`. Currently there are no custom HTML elements defined.
 * All custom HTML attributes to be applied to existing HTML elements **MUST** be prefixed
   with `data-ouia`.
-* All additional attributes to existing Javascript objects **MUST** be prefixed with `ouia`.
+* All additional properties to existing JavaScript objects **MUST** be prefixed with `ouia`.
 
 Specification Parts
 -------------------
@@ -125,7 +125,7 @@ A page describing the edit action of a food item with the id 142526 could have a
 looking like `<body ouia-page-type="food" ouia-page-action="edit" ouia-page-object-id="142526">`
 
 ### `OUIA:PageSafe`
-* A javascript accessible attribute named `ouia-page-safe` which declares whether the page
+* A JavaScript-accessible attribute named `ouia-page-safe` which declares whether the page
   is safe to access. This should roll up a single value which represents the completion of:
   * Page animations
   * XHR requests
